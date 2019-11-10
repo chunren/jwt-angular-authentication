@@ -1,0 +1,24 @@
+<div class="col-md-8 offset-md-2 mt-5">
+  <h4>Your profile:</h4>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Firstname</td>
+        <td>{{ currentUser.firstName }}</td>
+      </tr>
+      <tr>
+        <td>Lastname</td>
+        <td>{{ currentUser.lastName }}</td>
+      </tr>
+      <tr>
+        <td>Username</td>
+        <td>{{ currentUser.userName }}</td>
+      </tr>
+      <tr>
+        <td>Email Address</td>
+        <td>{{ currentUser.emailAddress }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-primary">Update Profile</button>
+</div>

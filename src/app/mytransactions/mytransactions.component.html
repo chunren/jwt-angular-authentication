@@ -1,0 +1,25 @@
+<div class="col-md-10 offset-md-2 mt-5">
+  <h4>Your transactions:</h4>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Tran Ref</th>
+        <th>Tran Date</th>
+        <th>Action</th>
+        <th>Amount</th>
+        <th>Tran Method</th>
+        <th>Subject</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of myTransactions; let i = index">
+        <td>{{ item.transactionRef }}</td>
+        <td>{{ item.transactionDate | date }}</td>
+        <td>{{ item.action }}</td>
+        <td>{{ item.amount | currency }}</td>
+        <td>{{ item.transactionMethod }}</td>
+        <td>{{ item.subjectName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
