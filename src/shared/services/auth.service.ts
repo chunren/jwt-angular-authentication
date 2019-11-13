@@ -3,10 +3,11 @@ import { BehaviorSubject, Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { map } from "rxjs/operators";
 import { environment } from "../../environments/environment";
-import { User } from "../models/user";
+import { User } from "../models/user.interface";
 import { JwtHelperService } from "@auth0/angular-jwt";
 
 @Injectable({ providedIn: "root" })
+  
 export class AuthService {
   private _currentUser: User;
   public isUserLoggedin: Observable<boolean>;
@@ -34,6 +35,13 @@ export class AuthService {
     else return null;
   }
 
+  public get accessToken(): String {
+    if (this.currentUserSubject && this.currentUserSubject.value && this.currentUserSubject.value.accessToken)
+      return this.currentUserSubject.value.accessToken;
+    
+    return null;
+  }
+
   public get isLoggedIn(): boolean {
     if (this.currentUserSubject) {
       const userData = this.currentUserSubject.value;
@@ -57,7 +65,6 @@ export class AuthService {
       const isTokenExpired = helper.isTokenExpired(rawToken);
       if (isTokenExpired) return true;
     }
-
     return false;
   }
 

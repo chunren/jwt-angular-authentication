@@ -3,7 +3,7 @@ import { BehaviorSubject, Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { map } from "rxjs/operators";
 import { environment } from "../../environments/environment";
-import { User } from "../models/user";
+import { User } from "../models/user.interface";
 import { Transaction } from "../models/transaction.interface";
 
 @Injectable({ providedIn: "root" })

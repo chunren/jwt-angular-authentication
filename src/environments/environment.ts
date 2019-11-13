@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   authApiUrl: "http://localhost:4000/users/authenticate",
-  resourceApiUrl: "http://localhost:4000"
+  resourceApiUrl: "http://localhost:3000",
+  mock: true
 };
 
 /*
