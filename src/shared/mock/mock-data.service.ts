@@ -97,43 +97,12 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImJvYiIsImZpcnN0TmFtZSI6IkJ
 
 
 import { Injectable } from "@angular/core";
-import { BehaviorSubject, Observable } from "rxjs";
 import { UserData } from "../models/userdata.interface";
 import { Transaction } from "../models/transaction.interface";
 import { Hashmap } from "../models/hashmap.interface";
 
 @Injectable ({ providedIn: "root" })
 export class MockDataService {
-
-	public usersValue: Observable<UserData[]>;
-	public usersSubject: BehaviorSubject<UserData[]>;
-
-	constructor() {
-		this.usersSubject = new BehaviorSubject<UserData[]>([
-			{
-				userName: "dan",
-				password: "d123",
-				firstName: "Daniel",
-				lastName: "Smith",
-				emailAddress: "daniel.smith@xyz777.com"
-			},
-			{
-				userName: "tim",
-				password: "tim78",
-				firstName: "Tim",
-				lastName: "Miller",
-				emailAddress: "tim.Miller@xyz777.com"
-			},
-			{
-				userName: "bob",
-				password: "bob2",
-				firstName: "Bob",
-				lastName: "Kweinlousi",
-				emailAddress: "bob.Kweinlousi@xyz777.com"
-			}
-		]);
-		this.usersValue = this.usersSubject.asObservable()
-	 }
 
 	public get users(): UserData[] {
 		return [

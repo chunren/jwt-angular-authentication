@@ -11,14 +11,14 @@ import { environment } from '../../environments/environment';
 @Injectable()
 export class MockService implements HttpInterceptor {
  
-  constructor(private mockData: MockDataService) { }
+  constructor(private mockDataService: MockDataService) { }
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     if (!environment.mock)
       return next.handle(request);
     
     const { url, method, headers, body } = request;
-    let myMockData = this.mockData;
+    let myMockDataService = this.mockDataService;
     return of(null)
         .pipe(mergeMap(handleRoute))
         .pipe(materialize())
@@ -34,19 +34,17 @@ export class MockService implements HttpInterceptor {
         default:
           return next.handle(request);
       }
-      
-
     }
 
     function authenticate() {
       const { username, password } = body;
       
-      let user = myMockData.users.find(
+      let user = myMockDataService.users.find(
         x => x.userName === username && x.password === password
       );
       if (!user) return error("Username or password is incorrect");
 
-      let mytoken = myMockData.tokenHash[username];
+      let mytoken = myMockDataService.tokenHash[username];
       let result: User = {
         userName: user.userName,
         firstName: user.firstName,
@@ -58,22 +56,15 @@ export class MockService implements HttpInterceptor {
       return ok(result);
     }
 
-    // function getUsers() {
-    //   if (!isLoggedIn()) return unauthorized();
-    //   return ok(this.mockData.users);
-    // }
-
     function getTransactions() {
       if (!isLoggedIn()) return unauthorized();
-
-      // todo: to validate the token
 
       const helper = new JwtHelperService();
       const authHeader = headers.get("Authorization");
       const myRawToken = authHeader.replace("Bearer ", "");
       const decodedToken = helper.decodeToken(myRawToken);
       let username = decodedToken.userName;
-      const result = myMockData.transactions.filter(x => x.userName === username);
+      const result = myMockDataService.transactions.filter(x => x.userName === username);
       return ok(result);
     }
 
