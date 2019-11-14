@@ -1,27 +1,37 @@
-# JwtAngularAuthentication
+# JWT (Json Web Token) in Angular Authentication
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.7.
+This project demonstrates how to use JWT for authentication in Anuglar 8 application.
 
-## Development server
+## JWT Sequences:
+![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_sequence_clai.PNG "JWT sequences")
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## JWT Examlple:
+![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_angular_jwt_encoded_clai.png "JWT Exaple")
 
-## Code scaffolding
+## Angular Application:
+### Login Page:
+![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_angular_login_clai.png "Login Page")
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Home Page:
+![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_angular_home_clai.png "Login Page")
 
-## Build
+### Secured Page - My Profile:
+![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_angular_myprofile_clai.png "My Profile Page")
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Secured Page - My Transactions:
+![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_angular_mytransactions_clai.png "My Transactions Page")
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## References
 
-## Running end-to-end tests
+1. Json Web Token in Wikipedia. -- [https://en.wikipedia.org/wiki/JSON_Web_Token](https://en.wikipedia.org/wiki/JSON_Web_Token)
+2. Angular 8 JWT Authentication Example by Jason Watmore -- [https://github.com/cornflourblue/angular-8-jwt-authentication-example](https://github.com/cornflourblue/angular-8-jwt-authentication-example)
+3. Angular 8 | JSON Web Token Authentication Tutorial with Login/ Dashboard and Guards using angular2-jwt -- [https://www.freakyjolly.com/angular-json-web-token-authentication-tutorial-using-angular2-jwt/](https://www.freakyjolly.com/angular-json-web-token-authentication-tutorial-using-angular2-jwt/)
+4. Angular Security - Authentication With JSON Web Tokens (JWT): The Complete Guide -- [https://blog.angular-university.io/angular-jwt-authentication/](https://blog.angular-university.io/angular-jwt-authentication/)
+5. Angular 7/8 Authentication with JWT Tutorial -- [https://www.techiediaries.com/angular-jwt/](https://www.techiediaries.com/angular-jwt/)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
