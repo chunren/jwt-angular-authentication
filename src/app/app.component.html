@@ -1,4 +1,4 @@
-<nav class="toolbar" role="banner">
+<nav class="toolbar ">
   <img
     width="40"
     alt="Angular Logo"
@@ -8,13 +8,10 @@
   <a *ngIf="isLoggedIn" class="nav-item nav-link" routerLink="/myprofile" >My Profile</a>
   <a *ngIf="isLoggedIn" class="nav-item nav-link" routerLink="/mytransactions">My Transactions</a>
   <a *ngIf="!isLoggedIn" class="nav-item nav-link" routerLink="/login">Login</a>
-
-  <span class="bg-success" *ngIf="currentUser && currentUser.firstName"
-    >Welcome, {{ currentUser.firstName }}!&nbsp;&nbsp;&nbsp;</span>
+  <span *ngIf="currentUser && currentUser.firstName" class="nav navbar-nav navbar-right">Welcome, {{ currentUser.firstName }}!&nbsp;&nbsp;&nbsp;</span>
     
-  <button  *ngIf="isLoggedIn" type="button" (click)="logout()"   class="btn btn-danger" >Logout</button>
+  <button  *ngIf="isLoggedIn" type="button" (click)="logout()"   class="btn btn-danger nnav navbar-nav navbar-right" >Logout</button>
 </nav>
-
 <!-- main app container -->
 <div class="container">
   <router-outlet></router-outlet>
