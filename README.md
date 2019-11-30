@@ -1,11 +1,11 @@
 # JWT (Json Web Token) in Angular Authentication
-##### Table of Contents  
+## Table of Contents  
 [1. JWT](#1-jwt)  
-[2. JWT Sequences](# 2-JWT-Sequences)  
-[3. JWT Examlple](# 3-JWT-Examlple)  
-[4. Angular Code](# 4-Angular-Code)  
-[5. Run JWT Angular Appliction in your local DEV environment](# 5-Run-JWT-Angular-Appliction-in-your-local-DEV-environment)  
-[6. Angular Application](# 6-Angular-Application)
+[2. JWT Sequences](#2-jwt-sequences)  
+[3. JWT Example](#3-jwt-example)  
+[4. Angular Code](#4-angular-code)  
+[5. Run JWT Angular Application in your local DEV environment](#5-run-jwt-angular-application-in-your-local-dev-environment)  
+[6. Angular Application](#6-angular-application)
 
 This project demonstrates how to use JWT for authentication in Anuglar 8 application.
 ## 1. JWT
@@ -14,7 +14,7 @@ JWT stands for Json Web Token, which is a JSON-based access token. JWT is widely
 ## 2. JWT Sequences
 ![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_sequence_clai.PNG "JWT sequences")
 
-## 3. JWT Examlple
+## 3. JWT Example
 A JWT includes three portions: Header, Payload, and Signaure.  
 
 The Header identifies which algorithm is used to generate the signature. Normally, "HS256" algorithm means the token is signed by HMAC-SHA256, and "RS256" inidicates it is a RSA signature with SHA-256.  
@@ -221,7 +221,7 @@ export class MockService implements HttpInterceptor {
 
 ```
 
-## 5. Run JWT Angular Appliction in your local DEV environment
+## 5. Run JWT Angular Application in your local DEV environment
 1. Install NodeJs. You can download and install NodeJS from  [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 2. Download or clone the applicaiton source code from [https://github.com/chunren/jwt-angular-authentication.git](https://github.com/chunren/jwt-angular-authentication.git) to your local folder like E:\\jwt-angular-authentication
 3. In the project root folder where the package.json is located, run: nmp install
