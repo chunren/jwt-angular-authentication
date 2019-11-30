@@ -21,7 +21,6 @@ The three parts are encoded separately using Base64url Encoding, and concatenate
 const token = base64urlEncoding(header) + '.' + base64urlEncoding(payload) + '.' + base64urlEncoding(signature)
 
 You can use the debugger of JWT - See [jwt.io](https://jwt.io/) -- See Ref [2] to generate and validate a JWT.  
-
 One example is:  
 
 Header:
@@ -43,7 +42,7 @@ Payload:
 }
 ``` 
 
-with secret key as: `secret: abcd123456`
+with <span style="color:red">secret key</span> as: `secret: abcd123456`
 
 The Signature is:
 ```
