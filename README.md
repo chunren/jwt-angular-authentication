@@ -48,8 +48,17 @@ Payload:
   "exp":1924905600
 }
 ``` 
+with secret key as: `secret: abcd123456`
 
-with <span style="color:red">secret key</span> as: `secret: abcd123456`
+Note:  
+iat: (issued at) claim identifies the time at which the JWT was issued.  
+exp: expiration time  
+You can convert the integer number to the datetime format via [https://www.unixtimestamp.com/ ](https://www.unixtimestamp.com/), for example,  
+1514592000 Is equivalent to: 12/30/2017  @12: 00am(UTC)  
+1539129600 Is equivalent to: 10/10/2018  @12: 00am(UTC)  
+1546300800 Is equivalent to: 01/01/2019  @12: 00am(UTC)  
+1924905600 Is equivalent to: 12/31/2030 @12: 00am(UTC)  
+
   
 The Signature is:
 ```
