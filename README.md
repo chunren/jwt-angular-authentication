@@ -1,13 +1,20 @@
 # JWT (Json Web Token) in Angular Authentication
+##### Table of Contents  
+[1. JWT](# 1. JWT)  
+[2. JWT Sequences](# 2. JWT Sequences)  
+[3. JWT Examlple](# 3. JWT Examlple)  
+[4. Angular Code](# 4. Angular Code)  
+[5. Run JWT Angular Appliction in your local DEV environment](# 5. Run JWT Angular Appliction in your local DEV environment)  
+[6. Angular Application](# 6. Angular Application)
 
 This project demonstrates how to use JWT for authentication in Anuglar 8 application.
 ## 1. JWT
 JWT stands for Json Web Token, which is a JSON-based access token. JWT is widely used for authentication and authorization in Web applications, and it can assert quite some number of claims by the authentication server that is trusted by application servers via sharing a secret key or the Public-key scheme. A client can obtain the JWT by supplying the credentials (e.g., username and password) to the authentication server.  The client can store the JWT in the local storage and use the JWT as a cookie. The client can subsequently send the JWT to application servers, and the application server can assert the claims of the token by checking or verifying the token's signautre.  If the assertion is successful, the application can then authorize the clients for the resource requests based on the claims of the token. The following is the JWT sequence diagram. More information can be found in Ref[1].
 
-## 2. JWT Sequences:
+## 2. JWT Sequences
 ![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_sequence_clai.PNG "JWT sequences")
 
-## 3. JWT Examlple:
+## 3. JWT Examlple
 A JWT includes three portions: Header, Payload, and Signaure.  
 
 The Header identifies which algorithm is used to generate the signature. Normally, "HS256" algorithm means the token is signed by HMAC-SHA256, and "RS256" inidicates it is a RSA signature with SHA-256.  
@@ -55,7 +62,7 @@ Ref[1]: Whenever the user wants to access a protected route or resource, the use
   
 ![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_angular_jwt_encoded_clai.png "JWT Exaple")
 
-## 4. Angular Code:
+## 4. Angular Code
 This project demonstrate how to use the JWT to authenticate a client, and use the JWT to request the secured resources or routes in an angular application. A mock is used to provide the authentication results and the response of the application servers.  
 
 The major parts include:  
@@ -214,14 +221,14 @@ export class MockService implements HttpInterceptor {
 
 ```
 
-## 5. Run JWT Angular Appliction in your local DEV environment:
+## 5. Run JWT Angular Appliction in your local DEV environment
 1. Install NodeJs. You can download and install NodeJS from  [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 2. Download or clone the applicaiton source code from [https://github.com/chunren/jwt-angular-authentication.git](https://github.com/chunren/jwt-angular-authentication.git) to your local folder like E:\\jwt-angular-authentication
 3. In the project root folder where the package.json is located, run: nmp install
 4. In the browser, type in the URL: http://localhost:4200/, and click the "Login" link.
 
 
-## 6. Angular Application:
+## 6. Angular Application
 
 ### 6.1 Login Page:
 ![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_angular_login_clai.png "Login Page")
