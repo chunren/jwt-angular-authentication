@@ -1,11 +1,11 @@
 # JWT (Json Web Token) in Angular Authentication
 ##### Table of Contents  
-[1. JWT](# 1. JWT)  
-[2. JWT Sequences](# 2. JWT Sequences)  
-[3. JWT Examlple](# 3. JWT Examlple)  
-[4. Angular Code](# 4. Angular Code)  
-[5. Run JWT Angular Appliction in your local DEV environment](# 5. Run JWT Angular Appliction in your local DEV environment)  
-[6. Angular Application](# 6. Angular Application)
+[1. JWT](#1-jwt)  
+[2. JWT Sequences](# 2-JWT Sequences)  
+[3. JWT Examlple](# 3-JWT Examlple)  
+[4. Angular Code](# 4-Angular Code)  
+[5. Run JWT Angular Appliction in your local DEV environment](# 5-Run JWT Angular Appliction in your local DEV environment)  
+[6. Angular Application](# 6-Angular Application)
 
 This project demonstrates how to use JWT for authentication in Anuglar 8 application.
 ## 1. JWT
