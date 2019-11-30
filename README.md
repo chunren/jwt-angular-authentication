@@ -144,7 +144,7 @@ public get isLoggedIn(): boolean {
   }
 ```
 
-### 4.2 Authentication Interceptor  
+### 4.3 Authentication Interceptor  
 It intercepts the HTTP trafifce to add the JWT token in the header.  The code is at `src\shared\authentication\auth.interceptor.ts`
 ```
 @Injectable()
@@ -164,7 +164,7 @@ export class AuthInterceptor implements HttpInterceptor {
 ```
 
 
-### 4.3 Mock Services  
+### 4.4 Mock Services  
 They provide the mock data, and mock service of the authentication response and the response of resource requests.  Teh code is at `src\shared\mock\mock-data.service.ts` which simulates the backend database and `src\shared\mock\mock.service.ts` which simulates the resource API call results.
 The following is part of the mock service.
 ```
