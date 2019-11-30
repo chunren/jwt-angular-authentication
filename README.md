@@ -215,10 +215,10 @@ export class MockService implements HttpInterceptor {
 ```
 
 ## 5. Run JWT Angular Appliction in your local DEV environment:
-### 5.1 Install NodeJs. You can download and install NodeJS from  [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
-### 5.2 Download or clone the applicaiton source code from [https://github.com/chunren/jwt-angular-authentication.git](https://github.com/chunren/jwt-angular-authentication.git) to your local folder like E:\\jwt-angular-authentication
-### 5.3 In the project root folder where the package.json is located, run: nmp install
-### 5.4 In the browser, type in the URL: http://localhost:4200/, and click the "Login" link.
+1. Install NodeJs. You can download and install NodeJS from  [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+2. Download or clone the applicaiton source code from [https://github.com/chunren/jwt-angular-authentication.git](https://github.com/chunren/jwt-angular-authentication.git) to your local folder like E:\\jwt-angular-authentication
+3. In the project root folder where the package.json is located, run: nmp install
+4. In the browser, type in the URL: http://localhost:4200/, and click the "Login" link.
 
 
 ## 6. Angular Application:
