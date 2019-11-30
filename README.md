@@ -5,7 +5,7 @@
 [3. JWT Example](#3-jwt-example)  
 [4. Angular Code](#4-angular-code)  
 [5. Run JWT Angular Application in your local DEV environment](#5-run-jwt-angular-application-in-your-local-dev-environment)  
-[6. Angular Application](#6-angular-application)
+[6. JWT Angular Application DEMO](#6-JWT-angular-application-DEMO)
 
 This project demonstrates how to use JWT for authentication in Anuglar 8 application.
 ## 1. JWT
@@ -228,7 +228,7 @@ export class MockService implements HttpInterceptor {
 4. In the browser, type in the URL: http://localhost:4200/, and click the "Login" link.
 
 
-## 6. Angular Application
+## 6. JWT Angular Application DEMO
 
 ### 6.1 Login Page:
 ![alt text](https://github.com/chunren/markdown-src/blob/master/raw/images/jwt_angular_login_clai.png "Login Page")
