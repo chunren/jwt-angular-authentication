@@ -221,8 +221,6 @@ export class MockService implements HttpInterceptor {
 ### 5.4 In the browser, type in the URL: http://localhost:4200/, and click the "Login" link.
 
 
-
-
 ## 6. Angular Application:
 
 ### 6.1 Login Page:
