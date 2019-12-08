@@ -24,7 +24,7 @@ steps:
   inputs:
     contents: '_buildOutput/**'
     targetFolder: $(Build.ArtifactStagingDirectory)
-- task: PublishBuildArtifacts@2
+- task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: $(Build.ArtifactStagingDirectory)
     artifactName: MyBuildOutputs
