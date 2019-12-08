@@ -22,7 +22,9 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    contents: '$(Build.SourcesDirectory)/dist/jwt-angular-authentication/*'
+    contents: |
+      $(Build.SourcesDirectory)/dist/jwt-angular-authentication/*
+      $(Build.SourcesDirectory)/readme.md
     targetFolder: '$(Build.ArtifactStagingDirectory)'    
     
 - task: PublishBuildArtifacts@1
