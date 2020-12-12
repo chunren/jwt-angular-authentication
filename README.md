@@ -260,7 +260,7 @@ export class MockService implements HttpInterceptor {
 4. Angular 8 | JSON Web Token Authentication Tutorial with Login/ Dashboard and Guards using angular2-jwt -- [https://www.freakyjolly.com/angular-json-web-token-authentication-tutorial-using-angular2-jwt/](https://www.freakyjolly.com/angular-json-web-token-authentication-tutorial-using-angular2-jwt/)
 5. Angular Security - Authentication With JSON Web Tokens (JWT): The Complete Guide -- [https://blog.angular-university.io/angular-jwt-authentication/](https://blog.angular-university.io/angular-jwt-authentication/)
 6. Angular 7/8 Authentication with JWT Tutorial -- [https://www.techiediaries.com/angular-jwt/](https://www.techiediaries.com/angular-jwt/)
-7. 
+
 
 
 
